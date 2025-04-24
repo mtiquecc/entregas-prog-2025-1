@@ -9,9 +9,6 @@ Autor: ElAutor <el@correo>
 Fecha: 2025-02-01
 """
 
-# **** En esta región puede importar los módulos necesarios para su programa
-# **** O las definiciones de clases y/o funciones que requiera.
-
 def suma(a, b):
     return a + b
 
@@ -29,9 +26,6 @@ def division(a, b):
 
 def run():
     """script entrypoint"""
-    # **** Poner el código ejecutable de su ejercicio aquí
-    
-    # Saludo
     print("Hola mundo!")
     
     while True:
@@ -40,13 +34,8 @@ def run():
         print("2. Resta")
         print("3. Multiplicación")
         print("4. División")
-        print("5. Salir")
         
         opcion = input("Introduce el número de la operación: ")
-        
-        if opcion == '5':
-            print("Saliendo de la calculadora...")
-            break
         
         if opcion in ('1', '2', '3', '4'):
             try:
@@ -66,7 +55,7 @@ def run():
         else:
             print("Opción no válida, intenta de nuevo.")
 
-# **** Conserve este condicional para ejecutar el programa directamente
 if __name__ == "__main__":
     run()
+
     
